@@ -1,0 +1,28 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dc220v/Eat-Da-Burger.git"
+  },
+  "author": "daphne chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dc220v/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/dc220v/Eat-Da-Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}
