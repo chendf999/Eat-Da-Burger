@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css?family=Delius|Pacifico');
+
+body { background-color: #ffbb33;}
+
+ul {
+  list-style-type:none;
+  font-family: 'Delius';
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Pacifico';
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: 'Delius';
+}
+
+.form-inline {
+  display: block;
+  margin: 0 auto;
+}
+
+li { margin-bottom: 20px;}

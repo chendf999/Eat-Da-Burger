@@ -1,0 +1,44 @@
+<header class="text-center">
+  <h1 class="mt-5">Eat-Da-Burger</h1>
+  <img src="/images/burger.png" width="25%" alt="burger">
+</header>
+
+<section class="container text-center">
+  <form class="form-inline mt-3">
+    <label class="sr-only" for="input-add">Custom Burger</label>
+    <input type="text" class="form-control" id="input-add" placeholder="Custom Burger">
+    <button type="submit" id="btn-add" class="btn btn-deep-orange btn-md">Create One!</button>
+  </form>
+</section>
+
+<section class="container">
+  <div class="row">
+
+    <div class="not-devoured col-lg-6 col-md-6 col-sm-12 text-center">
+      <h2 class="mt-5 mb-4">Made for You</h2>
+      <ul>
+        {{#each notDevoured}}
+        <li class="card card-body">
+          <p index = "{{id}}">{{burger_name}}</p>
+          <div class="actions">
+            <button class="burger-devour btn btn-sm btn-deep-orange" index = "{{id}}">Devour</button>
+            <button class="burger-delete btn btn-sm btn-danger" index = "{{id}}">Delete</button>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="devoured col-lg-6 col-md-6 col-sm-12 text-center">
+      <h2 class="mt-5 mb-4">Burgers Devoured</h2>
+      <ul>
+        {{#each devoured}}
+        <li index = {{id}}>
+          <p class="card card-body">{{burger_name}}</p>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+
+</div>
+</section>
